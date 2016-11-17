@@ -1,9 +1,22 @@
-# SCSS Boiler plate
+# Pipeline
 
-I am a boilerplate for SCSS
+Repo for the Pipeline website.
 
-`npm install`
+## Initial setup instructions
 
-`npm start`
+1. Clone this repo.
 
-Change `package.json` name and description.
+2. Make sure you're not still in a terminal instance `ctrl c` to cancel.
+
+3. Navigate to where you cloned this repo: `cd path/to/pipeline/folder`
+
+4. Install dependencies: `npm install`
+
+
+## Dev instructions
+
+1. Make sure you're not still in a terminal instance `ctrl c` to cancel.
+
+2. Navigate to Pipeline folder: `cd path/to/pipeline`
+
+3. Fire up dev task runner: `npm start`
