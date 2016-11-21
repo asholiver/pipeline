@@ -3,6 +3,8 @@
 
 @import 'settings';
 
+@import 'functions';
+
 @import 'media-queries';
 
 @import 'helpers';
@@ -10,3 +12,20 @@
 @import 'reset';
 
 @import 'main';
+
+@import 'layout/logo';
+
+@import 'component/background';
+
+@import 'layout/navbar';
+
+@import 'layout/login';
+
+@import 'grid';
+
+@import 'container';
+
+@import 'component/prototype';
+
+
+

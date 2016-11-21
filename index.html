@@ -4,7 +4,7 @@
 
 <head>
 
-    <title>Pipeline Test</title>
+    <title>Pipeline</title>
 
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -12,51 +12,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 
 </head>
 
 <body>
 
-<header>
+<header class="c-header-background">
     <h1>
-        <span>Pipeline</span>
-        <!-- insert logo here -->
+        <span class="l-logo">Pipeline</span>
         <img src="images/pipeline_logo.png"/>
     </h1>
 
-    <ul>
+    <ul class="l-navbar">
         <li>Features</li>
         <li>Pricing</li>
         <li>Case Studies</li>
     </ul>
 
-    <ul>
+    <ul class="l-login">
         <li>
-            <button>log in</button>
+            <button>Log in</button>
         </li>
         <li>
-            <button> Sign up</button>
+            <a href="#sign-up">Sign up</a>
         </li>
     </ul>
 </header>
 
 <main>
 
-<div>
-    <h2>Prototype your ideas in minutes</h2>
+<section class="c-prototype-background">
+    <div class="c-prototype">
+        <h2 class="">Prototype your ideas in minutes</h2>
 
-    <p>With a few clicks,transform any wireframe or mock-up into a fully-interactive prototype</p>
-<!-- insert browser picture here -->
-    <img src="images/browser_outline.png"/>
-</div>
+        <p class="">With a few clicks,transform any wireframe or mock-up into a fully-interactive prototype</p>
+    </div>
+    <img class="c-prototype__image" src="images/browser_outline.png"/>
+</section>
 
 <!-- class in section for :after feature for white triangle -->
-<section class="has-arrow">
-    <h2>Improve your workflow</h2>
+<section class="has-arrow l-container">
+    <h2 class="l-header">Improve your workflow</h2>
 
-    <ul>
-        <li>
+    <ul class="l-grid l-grid--gutter-vertical-large l-grid--gutter-horizontal-large">
+        <li class="l-grid__item l-grid__item--4-col l-grid__item--12-col-phone l-grid__item--6-col-tablet">
             <h3>Build it</h3>
             <div>
                 <img src="images/icon_build.png">
@@ -64,7 +65,7 @@
             <p>Build realistic, device-agnostic, user experiences that are prepared for production ready code.</p>
         </li>
 
-        <li>
+        <li class="l-grid__item l-grid__item--4-col l-grid__item--12-col-phone l-grid__item--6-col-tablet">
             <h3>Learn from it</h3>
             <div>
                 <img src="images/icon_learn.png">
@@ -72,7 +73,7 @@
             <p>Share links and gather feedback from teamates and clients. Present projects in real time with screen sharing.</p>
         </li>
 
-        <li>
+        <li class="l-grid__item l-grid__item--4-col l-grid__item--12-col-phone l-grid__item--6-col-tablet">
             <h3>Measure it</h3>
                 <div>
                     <img src="images/icon_measure.png">
@@ -81,49 +82,60 @@
         </li>
     </ul>
 
-    <div>
-        <img src=""/>
-        <p> &ldquo;I don't know what sorcery they are using to make the code, but it's amazing and beautiful&rdquo;</p>
-        <p>Kerem Suer, Omada Health</p>
+    <div class="c-quote-background">
+        <img src="images/user_photo.png"/>
+        <blockquote>
+            <p>I don't know what sorcery they are using to make the code, but it's amazing and beautiful</p>
+            <p>Kerem Suer, Omada Health</p>
+        </blockquote>
     </div>
 </section>
 
-<section>
+<!-- insert names for inputs and select -->
+<section class="c-signup-background" id="sign-up">
     <form>
         <fieldset>
+
             <legend>Sign up for beta access</legend>
+
             <label for="full-name">Full Name</label>
-            <input id="full-name" type="text" placeholder="E.g Paul Irish">
+            <input id="full-name" name="full-name" type="text" placeholder="E.g Paul Irish">
+
             <label for="email">Email address</label>
             <input id="email" type="text" placeholder="email@email.com.au">
+
             <label for="password">Password</label>
             <input id="password" type="text" placeholder="Strong like coffee">
-            <label for="option">How did you hear about this?</label>
-            <select id="option">
-                <option>Twitter</option>
+
+            <label for="heard-about">How did you hear about this?</label>
+            <select id="heard-about">
+                <option selected disabled>Select</option>
+                <option value="twitter">Twitter</option>
                 <option>Facebook</option>
                 <option>Tv</option>
                 <option>Radio</option>
                 <option>Magazines</option>
             </select>
-            <input id="checkbox" type="checkbox">
-             <label for="checkbox">I want to be added to the email list (we send monthly).</label>
-             <button>Create my account</button>
 
         </fieldset>
+
+        <fieldset>
+            <legend class="h-hide-visually">Email subscription opt in</legend>
+
+            <input id="email-opt-in" type="checkbox"  name="email-opt-in">
+            <label for="email-opt-in">I want to be added to the email list (we send monthly).</label>
+
+        </fieldset>
+
+        <button>Create my account</button>
+
     </form>
 </section>
 
-<footer>
-<h4> Copyright &copy; Pipeline test 2015
-
-
-
-
-
+<footer class="c-footer-background">
+    <small>Copyright &copy; Pipeline test 2015</small>
+</footer>
 
 </body>
 
-
 </html>
-

@@ -1,0 +1,21 @@
+.c-prototype {
+    color: #fff;
+    padding-bottom: 80px;
+    padding-top: 160px;
+    text-align: center;
+    line-height:2;
+
+}
+
+// ask dave about rem(80) error message: Error: required parameter $value is missing in call to Function rem\n        on line 9 of scss/component/_prototype.scss\n>>     padding: rem();\n
+.c-prototype__paragraph {
+
+
+}
+
+.c-prototype__image {
+    display: block;
+    margin: 0 auto;
+    width:50%;
+
+}
