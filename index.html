@@ -12,33 +12,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
 </head>
 
 <body>
 
 <header class="c-header-background">
-    <h1>
-        <span class="l-logo">Pipeline</span>
-        <img src="images/pipeline_logo.png"/>
-    </h1>
+    <div class="l-grid l-grid--space-between">
+        <div class="l-grid__item">
+            <h1 class="c-logo">
+                <img src="images/pipeline_logo.png"/>
+                <span>Pipeline</span>
+            </h1>
+        </div>
 
-    <ul class="l-navbar">
-        <li>Features</li>
-        <li>Pricing</li>
-        <li>Case Studies</li>
-    </ul>
+        <div class="l-grid__item">
+            <ul class="l-grid">
+                <li class="l-grid__item">
+                    <a href="features" class="c-nav-link">
+                        Features
+                    </a>
+                </li>
+                <li class="l-grid__item">
+                    <a href="pricing" class="c-nav-link">
+                        Pricing
+                    </a>
+                </li>
+                <li class="l-grid__item">
+                    <a href="case-studies" class="c-nav-link">
+                        Case Studies
+                    </a>
+                 </li>
+            </ul>
+        </div>
 
-    <ul class="l-login">
-        <li>
-            <button>Log in</button>
-        </li>
-        <li>
-            <a href="#sign-up">Sign up</a>
-        </li>
-    </ul>
+        <div class="l-grid__item">
+            <ul class="l-flex">
+                <li>
+                    <button>Log in</button>
+                </li>
+                <li>
+                    <a href="#sign-up">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </header>
 
 <main>

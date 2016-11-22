@@ -13,19 +13,23 @@
 
 @import 'main';
 
-@import 'layout/logo';
+// layout
+
+@import 'layout/grid';
+
+@import 'layout/container';
+
+@import 'layout/flex';
+
+// components
+
+@import 'component/logo';
 
 @import 'component/background';
 
-@import 'layout/navbar';
-
-@import 'layout/login';
-
-@import 'grid';
-
-@import 'container';
-
 @import 'component/prototype';
+
+@import 'component/navbar';
 
 
 
