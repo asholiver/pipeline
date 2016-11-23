@@ -23,13 +23,20 @@
 
 // components
 
+@import 'component/background';
+
 @import 'component/logo';
 
-@import 'component/background';
+@import 'component/navbar';
+
+@import 'component/login';
+
+@import 'component/dropdown';
 
 @import 'component/prototype';
 
-@import 'component/navbar';
+
+
 
 
 

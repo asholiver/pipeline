@@ -3,12 +3,12 @@
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    margin-left: -1rem;
+    margin-left: -(rem(16));
 }
 
 .l-grid__item {
     flex-basis: auto;
-    padding-left: 1rem;
+    padding-left: rem(16);
 }
 
 .l-grid__item--4-col {
@@ -21,21 +21,22 @@
 
 /* Vertical Gutter */
 .l-grid--gutter-vertical-large {
-    margin-bottom: -60px;
+    // margin-bottom: -60px;
+    margin-bottom: -(rem(60));
 }
 
 .l-grid--gutter-vertical-large > .l-grid__item {
-    margin-bottom: 60px;
+    margin-bottom: rem(60);
 }
 
 /* Horizontal Gutter */
 
 .l-grid--gutter-horizontal-large {
-    margin-left: -60px;
+    margin-left: -(rem(60));
 }
 
 .l-grid--gutter-horizontal-large > .l-grid__item {
-    padding-left: 60px;
+    padding-left: rem(60);
 }
 
 

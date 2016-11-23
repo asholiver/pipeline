@@ -1,14 +1,20 @@
 .c-prototype {
-    color: #fff;
-    padding-bottom: rem(80);
-    padding-top: rem(160);
+    color: #fafafa;
+    padding-bottom: rem(64);
+    padding-top: rem(96);
     text-align: center;
     line-height: 2;
 
 }
 
-.c-prototype__paragraph {
+.c-prototype__header {
+    color:#fafafa;
+    font-size: 38px;
+    font-weight: 300;
+}
 
+.c-prototype__paragraph {
+    color:#fafafa;
 
 }
 

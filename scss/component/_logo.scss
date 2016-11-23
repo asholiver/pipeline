@@ -1,4 +1,16 @@
 .c-logo {
     display: block;
+    padding:rem(22);
+    text-align: center;
+
+}
+
+
+.c-logo__text {
+    color: #79889c;
+    font-size: rem(16);
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    vertical-align: middle;
 
 }

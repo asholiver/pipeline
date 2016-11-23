@@ -23,7 +23,7 @@
         <div class="l-grid__item">
             <h1 class="c-logo">
                 <img src="images/pipeline_logo.png"/>
-                <span>Pipeline</span>
+                <span class="c-logo__text">Pipeline</span>
             </h1>
         </div>
 
@@ -48,12 +48,30 @@
         </div>
 
         <div class="l-grid__item">
-            <ul class="l-flex">
-                <li>
-                    <button>Log in</button>
+            <ul class="l-flex ">
+                <li class="">
+                    <button id="myBtn" class="c-dropdown c-dropdown-button">Log in</button>
+                        <form id="myDropdown" class="c-dropdown-content">
+                            <label for="username">Username</label>
+                            <input id="username" name="username" type="text" placeholder="Username">
+
+                            <label for="login-password">Password</label>
+                            <input id="login-password" name="login-password" type="text" placeholder="*********">
+                        </form>
                 </li>
+
+                <script>
+                // Get the button, and when the user clicks on it, execute myFunction
+                document.getElementById("myBtn").onclick = function() {myFunction()};
+
+                /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                </script>
+
                 <li>
-                    <a href="#sign-up">Sign up</a>
+                    <a class=" c-dropdown c-dropdown-button" href="#sign-up">Sign up</a>
                 </li>
             </ul>
         </div>
@@ -64,9 +82,9 @@
 
 <section class="c-prototype-background">
     <div class="c-prototype">
-        <h2 class="">Prototype your ideas in minutes</h2>
+        <h2 class="c-prototype__header">Prototype your ideas in minutes</h2>
 
-        <p class="">With a few clicks,transform any wireframe or mock-up into a fully-interactive prototype</p>
+        <p class="c-prototype__paragraph">With a few clicks,transform any wireframe or mock-up into a fully-interactive prototype</p>
     </div>
     <img class="c-prototype__image" src="images/browser_outline.png"/>
 </section>
@@ -121,10 +139,10 @@
             <input id="full-name" name="full-name" type="text" placeholder="E.g Paul Irish">
 
             <label for="email">Email address</label>
-            <input id="email" type="text" placeholder="email@email.com.au">
+            <input id="email" name="email" type="text" placeholder="email@email.com.au">
 
             <label for="password">Password</label>
-            <input id="password" type="text" placeholder="Strong like coffee">
+            <input id="password" name="password" type="text" placeholder="Strong like coffee">
 
             <label for="heard-about">How did you hear about this?</label>
             <select id="heard-about">
