@@ -1,27 +1,32 @@
 .c-prototype {
+
     color: #fafafa;
-    padding-bottom: rem(64);
+    padding-bottom: rem(50);
     padding-top: rem(96);
     text-align: center;
-    line-height: 2;
+    line-height: 1.6;
+
 
 }
 
 .c-prototype__header {
     color:#fafafa;
-    font-size: 38px;
+    font-size: rem(38);
     font-weight: 300;
+    padding-top: rem(16);
 }
 
 .c-prototype__paragraph {
     color:#fafafa;
+    font-size: rem(17);
+    letter-spacing:rem(0.2);
 
 }
 
 .c-prototype__image {
     display: block;
     margin: 0 auto;
-    width:50%;
+    width: 52%;
 
 }
 

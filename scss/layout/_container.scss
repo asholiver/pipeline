@@ -5,12 +5,14 @@
     margin:0 auto
 }
 
-.l-container--
+.l-container__wide {
+    max-width: 1100px;
+}
 
 .l-container__narrow {
     max-width:800px;
 }
 
 .l-container__mid {
-    max-width:900px;
+    max-width:1000px;
 }
