@@ -1,43 +1,34 @@
-.c-dropdown-button {
+.c-button {
     background-color: #fff;
     border: none;
     border-radius: rem(7);
     color: #aebbc2;
     cursor: pointer;
-    font-size: rem(16);
+    font-size: rem(14);
     font-weight:300;
     padding: rem(16) rem(40);
     text-decoration: none;
     text-transform: uppercase;
     transition:0.3s;
-
-
 }
 
-.c-dropdown:hover, .c-dropdown:focus {
+.c-button:hover,
+.c-button:focus {
     background-color: #4a9bff;
-    color:#fff;
     border-radius: rem(7);
-    box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.5);
-
+    box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.5);
+    color: #fff;
 }
 
 .c-dropdown {
-    display: inline-block;
-    position: relative;
-
-}
-
-.c-dropdown-content {
     background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     display: none;
     min-width: 160px;
-    position: absolute;
     overflow: auto;
-
+    position: absolute;
 }
 
-.show {
+.c-dropdown.is-active {
     display: block;
 }

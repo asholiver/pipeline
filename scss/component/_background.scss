@@ -1,11 +1,14 @@
-.c-header-background {
+.c-header {
     background-color: #fff;
+    padding: rem(19) rem(34);
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.3);
+    position: relative;
 }
 
 .c-prototype-background {
     background-color: #9eaab8;
     background: linear-gradient(155deg, #9eaab8 0%,#9eaab8 50%,#9ba6b3 50%,#9ba6b3 100%);
-    box-shadow: 0px -2px -1px #79889c;
+
 
 }
 

@@ -18,11 +18,11 @@
 
 <body>
 
-<header class="c-header-background">
+<header class="c-header">
     <div class="l-grid l-grid--space-between l-grid--align-middle">
         <div class="l-grid__item">
             <h1 class="c-logo">
-                <img src="images/pipeline_logo.png"/>
+                <img class="c-logo--image" src="images/pipeline_logo.png"/>
                 <span class="c-logo__text">Pipeline</span>
             </h1>
         </div>
@@ -48,34 +48,25 @@
         </div>
 
         <div class="l-grid__item">
-            <ul class="l-flex ">
-                <li class="">
-                    <button id="myBtn" class="c-dropdown c-dropdown-button">Log in</button>
-                        <form id="myDropdown" class="c-dropdown-content">
-                            <label for="username">Username</label>
-                            <input id="username" name="username" type="text" placeholder="Username">
+            <ul class=" l-grid l-grid--align-middle">
+                <li class="l-grid__item ">
+                    <button id="js-open-login-dropdown" class="c-button">Log in</button>
+                    <form id="login-dropdown" class="c-dropdown">
+                        <label for="username">Username</label>
+                        <input id="username" name="username" type="text" placeholder="Username">
 
-                            <label for="login-password">Password</label>
-                            <input id="login-password" name="login-password" type="text" placeholder="*********">
-                        </form>
+                        <label for="login-password">Password</label>
+                        <input id="login-password" name="login-password" type="text" placeholder="*********">
+                    </form>
                 </li>
 
-                <script>
-                // Get the button, and when the user clicks on it, execute myFunction
-                document.getElementById("myBtn").onclick = function() {myFunction()};
-
-                /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-                function myFunction() {
-                    document.getElementById("myDropdown").classList.toggle("show");
-                }
-                </script>
-
-                <li>
-                    <a class=" c-dropdown c-dropdown-button" href="#sign-up">Sign up</a>
+                <li class="l-grid__item ">
+                    <a class="c-button" href="#sign-up">Sign up</a>
                 </li>
             </ul>
         </div>
     </div>
+
 </header>
 
 <main>
@@ -172,6 +163,8 @@
 <footer class="c-footer-background">
     <small>Copyright &copy; Pipeline test 2015</small>
 </footer>
+
+<script src="js/main.js"></script>
 
 </body>
 

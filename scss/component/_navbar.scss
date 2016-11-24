@@ -1,5 +1,15 @@
 .c-nav-link {
     color: #aebbc2;
     padding: rem(40);
+    font-size: rem(14);
     text-decoration: none;
+    vertical-align: middle;
+
+    &:hover,
+    &:focus{
+        color:#79889c;
+
+    }
+
 }
+
