@@ -5,31 +5,30 @@
     position: relative;
 }
 
-.c-prototype-background {
+.c-background--gradient {
     background-color: #9eaab8;
     background: linear-gradient(155deg, #9eaab8 0%,#9eaab8 50%,#9ba6b3 50%,#9ba6b3 100%);
-
 }
 
-.c-info-block-background {
+.c-section--margin {
     margin-bottom: rem(140);
-
 }
 
-
-.c-quote-background {
-    background-color: #f5f7fa;
-    padding-bottom: rem(140);
-
-}
-
-.c-signup-background {
+.c-section--blue {
     background-color: #697b94;
 }
 
-.c-footer-background {
+.c-section--dark-blue {
     background-color:#3d4a5c;
 }
 
+.c-section--margin:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 70px 0 70px;
+    border-color: #000 transparent transparent transparent;
+
+}
 
 // border radius color - #9aa5b3 for build it, learn from it, measure it
