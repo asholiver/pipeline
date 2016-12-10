@@ -1,32 +1,35 @@
 .c-quote {
     background-color: #f5f7fa;
+    display: flex;
+    padding: rem(30) rem(130);
 }
 
-.c-quote__info--box {
-    margin-left: rem(115);
-    margin-right: rem(115);
-    padding-bottom: rem(34);
-    padding-top: rem(34);
-    display:flex;
-
+.c-quote__image-border {
+    background-color: #ebedf0;
+    border-radius: 50%;
+    padding: rem(10);
+    height: rem(200);
+    width: rem(200);
 }
 
 .c-quote__image {
-    background-color: #ebedf0;
-    border-radius: rem(120);
-    height: rem(220);
-    width: auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
 
-
-
-
-
+.c-quote__info::before {
+    content: open-quote;
+    font-family:georgia,times,serif;
+    font-size: rem(30);
+    position: absolute;
 }
 
 .c-quote__info {
     font-size: rem(18);
     padding-top: rem(34);
     padding-left: rem(100);
+    position:relative;
     text-align:left;
     color: #8596ab;
 

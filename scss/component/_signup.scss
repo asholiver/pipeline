@@ -8,9 +8,38 @@
 
 .c-signup--label {
     color:#fff;
+    display: block;
 }
 
 .c-signup--input {
     background-color: #3d4a5c;
-    color:#b0b3b8;
+    border: none;
+    color: #b0b3b8;
+    font-size: rem(16);
+    padding: rem(20) rem(140) rem(20) rem(15);
+    margin: rem(20) rem(0);
+
 }
+
+.c-signup--select select {
+    background-color: #3d4a5c;
+    border: none;
+    color: #b0b3b8;
+    font-size: rem(16);
+    padding: rem(20) rem(140) rem(20) rem(15);
+    margin: rem(20) rem(0);
+    line-height: 1;
+    border-radius: 0;
+    // height: 34px;
+    -webkit-appearance:none;
+}
+
+.c-sign--select {
+    width: 240px;
+    height: 34px;
+    overflow: hidden;
+    background: url(new_arrow.png) no-repeat right #ddd;
+    border: 1px solid #ccc;
+
+}
+

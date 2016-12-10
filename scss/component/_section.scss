@@ -11,7 +11,8 @@
 }
 
 .c-section--margin {
-    margin-bottom: rem(140);
+    padding-bottom: rem(140);
+    position: relative;
 }
 
 .c-section--blue {
@@ -23,12 +24,16 @@
 }
 
 .c-section--margin:after {
+    content: "";
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 60px 70px 0 70px;
-    border-color: #000 transparent transparent transparent;
-
+    border-width: 35px 40px 0 40px;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    top:100%;
+    left: 50%;
+    transform:translate(-50%);
 }
 
 // border radius color - #9aa5b3 for build it, learn from it, measure it

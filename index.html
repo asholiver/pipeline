@@ -127,13 +127,13 @@
 
 
         <div class="c-quote">
-            <div class="c-quote__info--box">
+            <div class="c-quote__image-border">
                 <img class="c-quote__image" src="images/user_photo.png"/>
-                <blockquote class="c-quote__info">
-                    <p>I don't know what sorcery they are using to make the <br>code, but it's amazing and beautiful.</p>
-                    <p class="c-quote__info--nametag">Kerem Suer, Omada Health</p>
-                </blockquote>
             </div>
+            <blockquote class="c-quote__info">
+                <p>I don't know what sorcery they are using to make the <br>code, but it's amazing and beautiful.</p>
+                <p class="c-quote__info--nametag">Kerem Suer, Omada Health</p>
+            </blockquote>
         </div>
 
     </div>
@@ -143,37 +143,39 @@
 
 
 <section class=" c-section--blue " id="sign-up">
-    <form>
+    <form class=" l-container l-container__narrow">
         <fieldset>
 
             <legend class="c-heading c-heading--alt">Sign up for beta access</legend>
 
-            <div class="c-signup">
-                <div class="c-signup--block">
+            <div class="l-grid">
+                <div class="l-grid__item l-grid__item--6-col">
                     <label class="c-signup--label" for="full-name">Full Name</label>
                     <input class="c-signup--input" id="full-name" name="full-name" type="text" placeholder="E.g Paul Irish">
                 </div>
 
-                <div class="c-signup--block">
+                <div class="l-grid__item l-grid__item--6-col">
                     <label class="c-signup--label" for="email">Email address</label>
                     <input class="c-signup--input" id="email" name="email" type="text" placeholder="email@email.com.au">
                 </div>
 
-                <div class="c-signup--block">
+                <div class="l-grid__item l-grid__item--6-col">
                     <label class="c-signup--label" for="password">Password</label>
                     <input class="c-signup--input" id="password" name="password" type="text" placeholder="Strong like coffee">
                 </div>
 
-                <div class="c-signup--block">
+                <div class="l-grid__item l-grid__item--6-col">
                     <label class="c-signup--label" for="heard-about">How did you hear about this?</label>
-                    <select class="c-signup--input" id="heard-about">
-                        <option selected disabled>Select</option>
-                        <option value="twitter">Twitter</option>
-                        <option>Facebook</option>
-                        <option>Tv</option>
-                        <option>Radio</option>
-                        <option>Magazines</option>
-                    </select>
+                    <div class="c-signup--select">
+                        <select class="c-signup--input id="heard-about">
+                            <option selected disabled>Select</option>
+                            <option value="twitter">Twitter</option>
+                            <option>Facebook</option>
+                            <option>Tv</option>
+                            <option>Radio</option>
+                            <option>Magazines</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </fieldset>
