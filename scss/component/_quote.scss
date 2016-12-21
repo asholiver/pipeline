@@ -7,38 +7,42 @@
 .c-quote__image-border {
     background-color: #ebedf0;
     border-radius: 50%;
-    padding: rem(10);
     height: rem(200);
+    padding: rem(10);
     width: rem(200);
 }
 
 .c-quote__image {
-    width: 100%;
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
+    width: 100%;
 }
 
 .c-quote__info::before {
-    content: open-quote;
-    font-family:georgia,times,serif;
-    font-size: rem(30);
+    color: darken(#ebedf0, 10%);
+    content: "\201C";
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: rem(40);
+    left: 14%;
     position: absolute;
+    top: 15%;
 }
 
 .c-quote__info {
-    font-size: rem(18);
-    padding-top: rem(34);
-    padding-left: rem(100);
-    position:relative;
-    text-align:left;
     color: #8596ab;
-
+    font-size: rem(18);
+    padding-left: rem(100);
+    padding-top: rem(34);
+    position: relative;
+    text-align: left;
+    text-indent: rem(20);
 
 }
 
 .c-quote__info--nametag {
+    color: #aebbc2;
     padding-top: rem(40);
-    color:#aebbc2;
+    text-indent: rem(0);
 
 }
 
